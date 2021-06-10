@@ -9,6 +9,6 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: byndyusoft/github-cli
-        tag: 1.11.0
+        tags: 1.11.0
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
