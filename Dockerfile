@@ -9,7 +9,7 @@ RUN apk update && \
     apk add git less openssh && \
     rm -rf /var/lib/apt/lists/* && rm /var/cache/apk/*
 
-RUN wget https://github.com/cli/cli/releases/download/v2.13.0/gh_2.1230_linux_386.tar.gz -O ghcli.tar.gz
+RUN wget https://github.com/cli/cli/releases/download/v2.13.0/gh_2.13.0_linux_386.tar.gz -O ghcli.tar.gz
 RUN tar --strip-components=1 -xf ghcli.tar.gz
 ENV PATH="/ghcli/bin:${PATH}"
 ENTRYPOINT ["gh"]
